@@ -1,13 +1,10 @@
 Package: GLMpack
 Type: Package
-Title: Data package to accompany Generalized Linear Models, 2nd edition 
+Title: Data and Code to Accompany Generalized Linear Models, 2nd Edition 
 Version: 0.1.0
-Author@R: as.person(c(
-    "Jeff Gill <jgill@american.edu> [aut]", 
-    "Michelle Torres <smtorres@wustl.edu> [aut, cre]",
-    "Simon Heuberger <sh6943a@american.edu> [aut]"
-  ))
-Maintainer: Michelle Torres <smtorres@wustl.edu>
+Authors@R: c(person("Jeff", "Gill", email="<jgill@american.edu>", role="aut"),
+person("Michelle", "Torres", email="<smtorres@rice.edu>", role=c("aut", "cre")),
+person("Simon", "Heuberger", email="<sh6943a@american.edu>", role="aut"))
 Description: This package contains all the data and functions used in Generalized
     Linear Models, 2nd edition, by Jeff Gill and Michelle Torres. Examples to create
     all models, tables, and plots are included for each data set.
