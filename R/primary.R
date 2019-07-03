@@ -51,7 +51,7 @@
 #' countsREG <- barplot(table(primary$REGION), main="Region",
 #'                       xlab="Region", mgp=c(1.1, 0.2, 0))
 #' text(countsREG[,1], rep(10,4), as.numeric(table(primary$REGION)), cex=1.5)
-# Plot 6: Religion
+# # Plot 6: Religion
 #' hist(primary$RELIGIOSITY,xlab="Religiosity Score",ylab="",
 #'      xlim=c(-1.5,2), ylim=c(0, 225), main="Religiosity",
 #'      col = "gray70", mgp=c(1.1, 0.2, 0))
@@ -112,7 +112,7 @@
 #' mygray2 = rgb(179, 179, 179, alpha = 150, maxColorValue = 255)
 #' mygray3 = rgb(204, 204, 204, alpha = 150, maxColorValue = 255)
 #' preds_win <- Effect("TRUMPWIN", primary.out)
-#' preds_ideol <- Effect("IDEOLOGY", primary.out, xlevels=100)
+#' preds_ideol <- Effect("IDEOLOGY", primary.out, xlevels=list(IDEOLOGY=100))
 #' par(mfrow=c(1,2), mar=c(4,3,3,0),oma=c(1,1,1,1))
 #' plot(1:3, preds_win$prob[,1], type="n",xlab="",ylab="",  yaxt="n", xaxt="n",
 #'      xlim=c(0,4), ylim=c(0, 0.7))
@@ -149,3 +149,4 @@
 #'       line = 1.7, cex.lab=1)
 #' title(line = 1, main="Ideology", font.main=3)
 "primary"
+
