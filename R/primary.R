@@ -69,6 +69,7 @@
 #'                      xlab="Perceptions of whether Trump could win",
 #'                      mgp=c(1.1, 0.2, 0), ylim=c(0,550))
 #' text(countsWIN[,1], rep(30,3), as.numeric(table(primary$TRUMPWIN)), cex=1.5)
+#' dev.off()
 #'
 #' ## Figure 5.3
 #' layout(matrix(1:2, ncol = 1), heights = c(0.9,0.1))
@@ -106,6 +107,7 @@
 #' plot(0,0, type="n", axes = FALSE, xaxt="n", yaxt="n", xlab="", ylab = "")
 #' legend("center", c("Cruz", "Kasich"), ncol=2, pch=c(21,21), pt.bg=c("black", "white"),
 #'        pt.cex=rep(1.4,2), bty = "n")
+#' dev.off()
 #'
 #' ## Figure 5.4
 #' mygray = rgb(153, 153, 153, alpha = 200, maxColorValue = 255)
@@ -148,5 +150,6 @@
 #'       ylab="Probability of voting",
 #'       line = 1.7, cex.lab=1)
 #' title(line = 1, main="Ideology", font.main=3)
+#' dev.off()
 "primary"
 

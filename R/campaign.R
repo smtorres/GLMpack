@@ -60,6 +60,7 @@
 #'       ylab= "Frequency",
 #'       line = 1.7, cex.lab=1)
 #' title(line = 1, main="Distribution of campaign contributions", font.main=1)
+#' dev.off()
 #'
 #' ## Figure 6.5
 #' campaign.mu <- predict(cmpgn.out_lm)
@@ -87,6 +88,7 @@
 #'      tck=0.02, cex.axis=0.9, cex.lab=1.3, lty=1)
 #' title(main="Normal-Quantile Plot",
 #'       line = 1, cex.main=1.7, font.main=1)
+#'dev.off()       
 #'
 #' ## Figure 6.6
 #' mygray = rgb(153, 153, 153, alpha = 200, maxColorValue = 255)
@@ -188,4 +190,5 @@
 #'       ylab="Total campaign contributions",
 #'       line = 1.7, cex.lab=1)
 #' title(line = 1, main="Hispanic constituency", font.main=3)
+#' dev.off()
 "campaign"

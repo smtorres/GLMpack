@@ -195,5 +195,6 @@
 #' title(main="Normal-Quantile Plot",
 #'       line = 1, cex.main=1.7, font.main=1)
 #' abline(-0.3,3.5, lwd=2)
-#'
+#' dev.off()
+#' 
 "star"
