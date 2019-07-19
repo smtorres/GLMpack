@@ -49,6 +49,7 @@
 #' pears <- resid(committee.out,type="pearson")
 #' devs <- resid(committee.out,type="deviance")
 #' x = seq(-2000,2000,length=200)
+#' opar = par(mfrow=c(1,1), mar=c(5.1,4.1,4.1,2.1), oma=c(0,0,0,0))
 #' layout(matrix(c(1,2), ncol = 1), heights = c(0.9,0.1))
 #' par(mar=c(3,4,2,4),oma=c(2,2,1,3))
 #' image(seq(0,51,length=200), seq(-2000,2000,length=200),z.matrix,xlim=c(0,51),ylim=c(-2000,2000),
@@ -67,5 +68,5 @@
 #' legend("center", ncol = 2,
 #'        legend = c("Pearson", "Deviances"),
 #'        cex=1, lty=c(0,1), pch = c(15,NA))
-#' dev.off()
+#' par(opar)
 "committee"

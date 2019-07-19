@@ -73,5 +73,6 @@ plot(0,0, type="n", axes = FALSE, xlab = "", ylab = "")
 legend("center", ncol = 2,
        legend = c("Pearson", "Deviances"),
        cex=1, lty=c(0,1), pch = c(15,NA))
+dev.off()
 }
 \keyword{datasets}

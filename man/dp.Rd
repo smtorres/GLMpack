@@ -112,6 +112,7 @@ plot(0,0, type="n", axes = FALSE, xlab = "", ylab = "")
 legend("center", ncol = 2,
        legend = c("South State", "Non-South State"),
        cex=1.1, lty=c(2,1), bty="n", lwd=c(2,3))
+dev.off()
 
 ## Figure 5.2
 par(mar=c(3,3,1,0),oma=c(1,1,1,1))
@@ -128,6 +129,7 @@ axis(1, tck=0.03, cex.axis=0.9, mgp=c(0.3, 0.3, 0), lty=1, lwd=0, lwd.ticks = 1)
 axis(2, tck=0.03, cex.axis=0.9, mgp=c(0.3, 0.3, 0), lty=1, lwd=0, lwd.ticks = 1, las=2)
 title(xlab = 'Coefficient of SOUTH', ylab="Profile log-likelihood",
       line = 1.7, cex.lab=1.2)
+dev.off()
 
 ## Figure 6.1
 coef.vector <- NULL
@@ -156,5 +158,6 @@ for(i in 2:ncol(coef.vector))  {
   title(ylab=dimnames(dp.mat.0)[[2]][i],
         line = 3.25, cex.lab=1.2)
 }
+dev.off()
 }
 \keyword{datasets}

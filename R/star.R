@@ -25,6 +25,7 @@
 #'
 #' @usage data(star)
 #' @examples
+#' opar = par(mfrow=c(1,1), mar=c(5.1,4.1,4.1,2.1), oma=c(0,0,0,0))
 #' data(star)
 #' attach(star)
 #'
@@ -195,6 +196,6 @@
 #' title(main="Normal-Quantile Plot",
 #'       line = 1, cex.main=1.7, font.main=1)
 #' abline(-0.3,3.5, lwd=2)
-#' dev.off()
+#' par(opar)
 #' 
 "star"

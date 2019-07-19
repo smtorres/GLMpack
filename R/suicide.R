@@ -16,6 +16,7 @@
 #'
 #' @usage data(suicide)
 #' @examples
+#' opar = par(mfrow=c(1,1), mar=c(5.1,4.1,4.1,2.1), oma=c(0,0,0,0))
 #' data(suicide)
 #' attach(suicide)
 #'
@@ -67,7 +68,7 @@
 #' title(xlab = 'Number of suicides per 100,000 people', ylab="",
 #'       line = 1.7, cex.lab=1.2)
 #' title(line = 1, main="Suicide rate", font.main=3)
-#' dev.off()
+#' par(opar)
 #'
 #' ## Figure 7.2
 #' newdat1 <- data.frame(GDP=seq(13, 70.5, 1), TEMP=rep(mean(TEMP), 58),
@@ -103,6 +104,6 @@
 #' axis(2, tck=0.03, cex.axis=0.9, mgp=c(0.3, 0.3, 0), lty=1, lwd=0, lwd.ticks = 1, las=2)
 #' title(xlab = '% of population with alcohol or drug use disorders', ylab="",
 #'       line = 1.7, cex.lab=1.2)
-#' dev.off()
+#' par(opar)
 #' 
 "suicide"

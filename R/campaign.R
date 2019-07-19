@@ -50,6 +50,7 @@
 #' confint(cmpgn.out_lm)
 #'
 #' ## Figure 6.4
+#' opar = par(mfrow=c(1,1), mar=c(5.1,4.1,4.1,2.1), oma=c(0,0,0,0))
 #' par(mar=c(4,3,3,0),oma=c(1,1,1,1))
 #' hist(campaign$TOTCONTR,xlab="",ylab="", yaxt="n", xaxt="n",
 #'      xlim=c(0,9000), ylim=c(0, 130), main="",
@@ -60,7 +61,7 @@
 #'       ylab= "Frequency",
 #'       line = 1.7, cex.lab=1)
 #' title(line = 1, main="Distribution of campaign contributions", font.main=1)
-#' dev.off()
+#' par(opar)
 #'
 #' ## Figure 6.5
 #' campaign.mu <- predict(cmpgn.out_lm)
@@ -88,7 +89,7 @@
 #'      tck=0.02, cex.axis=0.9, cex.lab=1.3, lty=1)
 #' title(main="Normal-Quantile Plot",
 #'       line = 1, cex.main=1.7, font.main=1)
-#'dev.off()       
+#'par(opar)
 #'
 #' ## Figure 6.6
 #' mygray = rgb(153, 153, 153, alpha = 200, maxColorValue = 255)
@@ -190,5 +191,5 @@
 #'       ylab="Total campaign contributions",
 #'       line = 1.7, cex.lab=1)
 #' title(line = 1, main="Hispanic constituency", font.main=3)
-#' dev.off()
+#' par(opar)
 "campaign"
